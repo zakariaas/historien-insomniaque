@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historien Insomniaque – Mentions</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>body{margin:0}
+/* Layout: a single reading column under a night-blue band carrying the channel name */
+:root{
+  --nuit:#121a36; --nuit-2:#1d2a52; --or:#d99a3a; --or-clair:#f2c46e;
+  --fond:#f7f5f0; --texte:#1f2433; --doux:#5b6276; --trait:#dcd8cf;
+  --titre:"Cinzel","Trajan Pro",Georgia,serif;
+  --corps:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --fond:#0d1226; --texte:#e9e5da; --doux:#a5abbd; --trait:#2a3456; --or:#e7ae52; color-scheme:dark}}
+:root[data-theme="dark"]{--fond:#0d1226; --texte:#e9e5da; --doux:#a5abbd; --trait:#2a3456; --or:#e7ae52; color-scheme:dark}
+body{background:var(--fond);color:var(--texte);font-family:var(--corps);font-size:17px;line-height:1.65}
+.bande{background:linear-gradient(160deg,var(--nuit-2),var(--nuit));color:#f3e6c4;
+  padding-block:40px 34px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bande .col{display:flex;align-items:center;gap:18px}
+.bande svg{flex:none;width:64px;height:64px}
+.bande h1{font-family:var(--titre);font-size:clamp(24px,5vw,34px);margin:0;color:var(--or-clair);letter-spacing:.5px;text-wrap:balance}
+.bande p{margin:4px 0 0;font-size:15px;color:#cfc4a5}
+main{padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.col{max-width:68ch;margin:0 auto}
+nav{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15px;border-bottom:1px solid var(--trait);padding-bottom:14px}
+nav a{color:var(--or);text-decoration:none;font-weight:600}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+h2{font-family:var(--titre);font-size:22px;margin:44px 0 6px;color:var(--texte);letter-spacing:.4px}
+h3{font-size:17px;margin:24px 0 4px}
+.maj{color:var(--doux);font-size:14px;margin:0 0 10px}
+ul{padding-left:1.2em}
+li{margin:4px 0}
+a{color:var(--or)}
+code{font-size:15px}
+</style></head><body>
+
+<header class="bande">
+  <div class="col">
+    <svg viewBox="60 60 680 680" aria-hidden="true">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe7a8"/><stop offset=".5" stop-color="#f2b84b"/><stop offset="1" stop-color="#c47a1c"/></linearGradient>
+      <mask id="m"><rect width="800" height="800" fill="#fff"/><circle cx="480" cy="340" r="215" fill="#000"/></mask></defs>
+      <circle cx="370" cy="400" r="250" fill="url(#g)" mask="url(#m)"/>
+      <rect x="440" y="455" width="62" height="170" rx="8" fill="#f6ead0"/>
+      <ellipse cx="471" cy="628" rx="78" ry="16" fill="#c47a1c"/>
+      <path d="M471,330 C500,380 505,410 471,438 C437,410 442,380 471,330Z" fill="#ffc94d"/>
+    </svg>
+    <div>
+      <h1>L'Historien Insomniaque</h1>
+      <p>Histoires vraies pour s'endormir · conditions d'utilisation et confidentialité</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="col">
+<section id="retour" hidden style="border:2px solid var(--or);border-radius:10px;padding:16px 18px;margin:0 0 24px">
+  <h2 style="margin-top:0">Autorisation TikTok reçue</h2>
+  <p>Copie cette adresse complète et colle-la dans le Terminal :</p>
+  <p><code id="adresse" style="word-break:break-all"></code></p>
+  <button id="copier" type="button" style="font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--or);background:transparent;color:var(--texte);cursor:pointer">Copier l'adresse</button>
+</section>
+    <nav aria-label="Sections">
+      <a href="#confidentialite">Politique de confidentialité</a>
+      <a href="#conditions">Conditions d'utilisation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="confidentialite">
+      <h2>Politique de confidentialité</h2>
+      <p class="maj">Dernière mise à jour : 26 octobre 2026</p>
+      <p>« Historien Insomniaque – Publication » est un outil personnel utilisé uniquement par le créateur de la chaîne L'Historien Insomniaque. Il publie ses propres vidéos d'histoire sur ses propres comptes TikTok et Instagram. Il n'est pas proposé au public et n'a pas d'autres utilisateurs.</p>
+
+      <h3>Données utilisées</h3>
+      <ul>
+        <li>Les jetons d'accès fournis par TikTok et Meta lorsque le créateur autorise l'outil sur son propre compte.</li>
+        <li>L'identifiant et le nom du compte TikTok ou Instagram du créateur, pour savoir où publier.</li>
+        <li>L'état des publications (envoyée, publiée, erreur), pour éviter les doublons.</li>
+      </ul>
+      <p>L'outil ne collecte aucune donnée sur les spectateurs : ni profils, ni messages, ni listes d'abonnés.</p>
+
+      <h3>Stockage et partage</h3>
+      <p>Ces informations restent sur l'ordinateur du créateur, dans un fichier local protégé. Elles ne sont ni vendues, ni louées, ni transmises à des tiers. Elles servent uniquement à appeler les API officielles de TikTok (Content Posting API) et d'Instagram (API Graph) pour publier les vidéos du créateur.</p>
+
+      <h3>Suppression</h3>
+      <p>L'accès peut être retiré à tout moment depuis les paramètres de sécurité du compte TikTok ou Instagram (applications autorisées). Les jetons locaux sont alors supprimés et ne sont plus utilisés.</p>
+    </section>
+
+    <section id="conditions">
+      <h2>Conditions d'utilisation</h2>
+      <p class="maj">Dernière mise à jour : 26 octobre 2026</p>
+      <ul>
+        <li>L'outil est réservé au titulaire des comptes L'Historien Insomniaque et ne publie que sur ses propres comptes.</li>
+        <li>Les vidéos publiées sont des récits historiques originaux. La voix et les illustrations sont créées avec l'aide de l'intelligence artificielle, et chaque vidéo est signalée comme contenu généré par IA sur la plateforme.</li>
+        <li>Chaque publication respecte les conditions d'utilisation et les règles communautaires de TikTok et d'Instagram.</li>
+        <li>L'outil est fourni tel quel, sans garantie. Le créateur reste responsable du contenu qu'il publie.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pour toute question : la chaîne YouTube <a href="https://www.youtube.com/@HistorienInsomniaqueFR">@HistorienInsomniaqueFR</a> (onglet « À propos »).</p>
+    </section>
+  </div>
+</main>
+<script>
+(function(){var q=location.search;if(q.indexOf("code=")<0&&q.indexOf("error=")<0)return;
+var s=document.getElementById("retour"),a=document.getElementById("adresse");s.hidden=false;a.textContent=location.href;
+document.getElementById("copier").onclick=function(){var b=this;try{navigator.clipboard.writeText(location.href).then(function(){b.textContent="Copiée";},function(){});}catch(e){}};})();
+</script></body></html>
